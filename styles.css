@@ -43,14 +43,21 @@ ul{
 }
 
   .btn{
-    text-transform: uppercase;
+    text-transform: capitalize;
+    background: var(--primary-color-5);
+    padding: 1rem;
+    font-size: 1rem;
     cursor: pointer;
+    font-family: var(--ff-primary-1);
+    color: var(--primary-color-1);
+    border-radius: 1rem;
+    animation: btn 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
  .btn:hover{
-    background: var(--primary-color-1);
+    background: var(--primary-color-3);
     transition: var(--transition);
-    color: var(--primary-color-6);  
-     
  }
  @keyframes btn{
     0%{
@@ -79,9 +86,15 @@ nav{
     position: relative;
     right: 2.5rem;
 }
-.nav-items li:hover{
-    box-shadow: solid 5px var(--primary-color-5) ;
+.nav-items a h6:hover{
+    color: var(--primary-color-3);
+    transition: var(--transition);
+    box-shadow: 0px 3px var(--primary-color-3);
 }
 .logo img{
    max-width: 10rem;
+}
+.logo img:hover{
+    box-shadow: 0px 3px var(--primary-color-3);
+    transition: var(--transition);
 }
