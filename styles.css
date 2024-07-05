@@ -22,7 +22,6 @@ global styles
 html{
     scroll-behavior: smooth;
 }
-
 .wrapper{
     max-width: 1180px;
     margin: 0 auto;
@@ -36,6 +35,23 @@ p{
     font-family: var(--ff-primary-1);
 }
 
+h1{
+    color: var(--primary-color-3);
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}
+h2{
+    color: var(--primary-color-3);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-family: var(--ff-primary-1);
+    position: relative;
+    top: -2rem;
+}
 h3{
     color: var(--primary-color-5);
     font-size: 2rem;
@@ -82,6 +98,22 @@ ul{
     animation-fill-mode: forwards;
     opacity: 0;
   }
+  .btn-book{
+    background: var(--primary-color-3);
+    color: var(--primary-color-1);
+    font-weight: 100;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--ff-primary-1);
+    max-width: fit-content;
+    border-radius: 1rem;
+    margin: auto;
+  }
+  .btn-book:hover{
+    transition: var(--transition);
+    background: var(--primary-color-5);
+    color: var(--primary-color-1);
+  }
  .btn:hover{
     background: var(--primary-color-3);
     transition: var(--transition);
@@ -99,7 +131,9 @@ ul{
     }
 }
 
-/* nav */
+/* ==========
+nav
+========== */
 nav{
     display: flex;
     flex-direction: row;
@@ -124,8 +158,18 @@ nav{
 .logo img{
    max-width: 10rem;
 }
+.logo-individual{
+    display: flex;
+    flex-direction: row;
+}
+.role-model{
+    display: flex;
+    flex-direction: column;
+}
 
-/* about */
+/* ==========
+about
+========== */
 .about-container{
     display: flex;
     justify-content: space-evenly;
@@ -146,7 +190,9 @@ nav{
 .brands{
     display: flex;   
 }
-/* content */
+/* ==========
+content
+========== */
 .content{
     display: flex;
     flex-direction: row;
@@ -163,7 +209,7 @@ nav{
 .card img:hover, .card-model img:hover{
     opacity: 0.7;
     transition: var(--transition);
-    box-shadow: 3px 3px var(--primary-color-5);
+    /* box-shadow: 3px 3px var(--primary-color-5); */
     transform: scale(1.02);
 }
 .card-model{
@@ -175,7 +221,9 @@ nav{
     max-width: 1180px;
     max-height: 450px;
 }
-/* models */
+/* ==========
+models
+========== */
 .model-container{
     display: flex;
     justify-content: space-between;
@@ -194,6 +242,17 @@ nav{
 .model-card img:hover{
     opacity: 0.7;
     transition: var(--transition);
-    box-shadow: 3px 3px var(--primary-color-5);
+    /* box-shadow: 3px 3px var(--primary-color-5); */
     transform: scale(1.02);
+}
+
+/* ==========
+graphic d
+========== */
+
+.kanyiso-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
 }
